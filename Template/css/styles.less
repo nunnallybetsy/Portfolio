@@ -1,0 +1,254 @@
+/*
+File Name: grid.css
+Date: 04/21/2018
+Programmer: Betsy Steinert
+*/
+
+@import 'palette.less';
+@import 'mixins.less';
+
+/* Styles body of page */
+
+main {
+  background: @color2;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+}
+
+
+/*Styles images*/
+
+img {
+  width: 100%;
+}
+
+
+/* Styles header section of page */
+
+header {
+  height: 5em;
+  background-color: @color3;
+}
+
+
+/* Sets Position of hamburger menu */
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
+/* Styles position of bottom bar of hamburger menu when clicked */
+
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+
+/* Makes middle bar of hamburger menu disappear */
+
+.menu-toggle.on .two {
+  opacity: 0;
+}
+
+
+/* Styles position of top bar of hamburger menu when clicked */
+
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
+
+/* Styles the look of the hamburger menu and the movement from hamburger to x */
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 5px;
+  background: @color2;
+  margin: 6px auto;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+
+/* Styles position of menu items */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Ubuntu', sans-serif;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Hides menu items */
+
+nav ul.hidden {
+  display: none;
+}
+
+
+/* Styles look and movement of menu items */
+
+nav ul a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: @color2;
+  font-size: 2.5em;
+  line-height: 1.5;
+  width: 100%;
+  display: block;
+  font-family: 'Ubuntu' sans-serif;
+}
+
+
+/* Styles the hover over the expanded menu */
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: @color4;
+}
+
+
+/* Styles the drop down look */
+
+.menu-section.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+}
+
+h1 {
+  color: @color2;
+  position: absolute;
+  font-size: 2em;
+  font-family: Ubuntu, sans-serif;
+  padding-top: 1.3em;
+  padding-left: 0.3em;
+}
+
+h2 {
+  .h2()
+}
+
+h3 {
+  .h3()
+}
+
+p {
+  .p()
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 10em;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  background-color: @color3;
+  text-align: center;
+}
+
+.fa {
+  padding: 0.2em 0em 0.2em 0em;
+  font-size: 2em;
+  width: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  color: @color2;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  main {
+    font-size: 1.5em;
+  }
+  footer {
+    font-size: 1.5em;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  /* Styles position of bottom bar of hamburger menu when clicked */
+  .menu-toggle.on .one {
+    display: none;
+  }
+  /* Makes middle bar of hamburger menu disappear */
+  .menu-toggle.on .two {
+    display: none;
+  }
+  /* Styles position of top bar of hamburger menu when clicked */
+  .menu-toggle.on .three {
+    display: none;
+  }
+  /* Styles the look of the hamburger menu and the movement from hamburger to x */
+  .one,
+  .two,
+  .three {
+    display: none;
+  }
+  /* Styles the look of the hamburger menu and the movement from hamburger to x */
+  nav li {
+    float: right;
+  }
+  nav li a {
+    padding: 12px 12px;
+  }
+  /* Displays nav bar */
+  nav ul.hidden {
+    font-size: 0.7em;
+    float: right;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    bottom: -5em;
+  }
+  footer {
+    height: 10em;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+//@media only screen and (min-width: 1200px) {...}
