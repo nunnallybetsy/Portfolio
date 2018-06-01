@@ -40,7 +40,7 @@ main {
 	}
 
 .mbh-interview {
-  background-color: royalblue;
+  background-color: @color4;
   text-align: center;
 }
 .mbh-interview:before {
@@ -56,11 +56,15 @@ main {
 }
 
 .mbh-pricing {
-  background-color: crimson;
+  background-color: deeppink;
   text-align: center;
 }
 .mbh-pricing:before {
   content: "\f0d6";
+}
+
+.mbh-features {
+  background-color: aqua;
 }
 
 p.box {
@@ -226,12 +230,17 @@ h1 {
   right: 40px;
   
 }
+
+
+
 h2 {
   .h2()
+  
 }
 
 h3 {
   .h3()
+  
 }
 
 h4 {
@@ -265,7 +274,7 @@ img {vertical-align: middle;}
   top: 100%;
   width: auto;
   padding: 16px;
-  color: blue;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -280,7 +289,14 @@ img {vertical-align: middle;}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: @color4;
+}
+
+/* Styles the list */
+.skills {
+  list-style-type: square;
+  padding-left: 5em;
+  line-height: 1.5em;
 }
 
 /* Caption text */
@@ -296,7 +312,7 @@ img {vertical-align: middle;}
   
 }
 
-#phead {
+#phead1, #phead2, #phead3 {
   font-size: 1.5em;
 }
 
@@ -376,14 +392,14 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: lightgray;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: grey;
 }
 
 /* Fading animation */
@@ -454,7 +470,7 @@ input[type=email], select {
 input[type=submit] {
     width: 100%;
     background-color: @color4;
-    color: white;
+    color: @color2;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -462,8 +478,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.textbox {
+  height: 150px;
+}
+
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: @color3;
 }
 
 #contact {
@@ -471,6 +491,11 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
     margin: 20px;
+}
+
+#top {
+  padding-top: 3.5em;
+  
 }
 
 footer {
@@ -564,6 +589,3 @@ footer {
 }
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-//@media only screen and (min-width: 1200px) {...}

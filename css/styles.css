@@ -33,7 +33,7 @@ main {
   font-size: 50px;
 }
 .mbh-interview {
-  background-color: royalblue;
+  background-color: #7b68ee;
   text-align: center;
 }
 .mbh-interview:before {
@@ -47,11 +47,14 @@ main {
   content: "\f10b";
 }
 .mbh-pricing {
-  background-color: crimson;
+  background-color: deeppink;
   text-align: center;
 }
 .mbh-pricing:before {
   content: "\f0d6";
+}
+.mbh-features {
+  background-color: aqua;
 }
 p.box {
   padding: 1em;
@@ -182,7 +185,7 @@ h2 {
 }
 h3 {
   padding: 30px 0 10px 20px;
-  font-size: 1.2em;
+  font-size: 1.7em;
   font-family: 'Ubuntu', sans-serif;
   text-align: left;
   font-weight: bold;
@@ -223,7 +226,7 @@ img {
   top: 100%;
   width: auto;
   padding: 16px;
-  color: blue;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -237,7 +240,13 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #7b68ee;
+}
+/* Styles the list */
+.skills {
+  list-style-type: square;
+  padding-left: 5em;
+  line-height: 1.5em;
 }
 /* Caption text */
 .text {
@@ -250,7 +259,9 @@ img {
   left: 70%;
   width: 100%;
 }
-#phead {
+#phead1,
+#phead2,
+#phead3 {
   font-size: 1.5em;
 }
 .acebtn {
@@ -321,14 +332,14 @@ img {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: lightgray;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: grey;
 }
 /* Fading animation */
 .fade {
@@ -391,21 +402,27 @@ select {
 input[type=submit] {
   width: 100%;
   background-color: #7b68ee;
-  color: white;
+  color: #ffffff;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
+.textbox {
+  height: 150px;
+}
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #95c92c;
 }
 #contact {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   margin: 20px;
+}
+#top {
+  padding-top: 3.5em;
 }
 footer {
   clear: both;
@@ -480,4 +497,3 @@ footer {
     height: 10em;
   }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */

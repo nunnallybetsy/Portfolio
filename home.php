@@ -21,119 +21,144 @@
 <body>
 
   <header class="main-header">
-    <h1><img id="logo" src="images/simplelogo.png"></h1>
+    <h1><img id="logo" src="images/simplelogo.png" alt="logo"></h1>
     <?php include ('header.php');?>
   </header>
 
 
   <main>
-   <img src="images/animal-3346331_1920.png">
-    <section id="about">
-
-    <h2>About Me</h2>
-    <img id="me" src="images/577067_3188210984066_1855893948_n.jpg">
-
-    <p>
-      My name is Betsy Steinert and I am a website designer who thrives off of creating new things.  
-
-    </p>
-      
-</section>
-    
-   <section id="work">
-     
-     <h2>Portfolio</h2>
-     <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <h2 id="phead">Ace in the Hole - <input class="acebtn" type="button" value="View Specs" onclick="window.location.href='ace.php'" /></h2>	
-  <img src="images/ace.PNG" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <h2 id="phead">Burrito Masala - <input class="burbtn" type="button" value="View Specs" onclick="window.location.href='registration.php'" /></h2>
-
-  <img src="images/Capture.PNG"  style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <h2 id="phead">Color Me Crazy - <input class="colbtn" type="button" value="View Specs" onclick="window.location.href='registration.php'" /></h2>
-  <img src="images/colormecrazy.PNG" style="width:100%">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-  
+    <img src="images/animal-3346331_1920.png" alt="lion">
 
 
-    <p>
-      Each website I have created was carefully crafted by getting to know my client and their goals and integrating what I learned from them with my skills to build a beautiful website.  Please view the specs of each design to see details and features of each website.
+    <section id="work">
 
-    </p>
-     
-          
+      <h3 style="text-align: center;">Portfolio</h3>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <h2 id="phead1">Color Me Crazy - <input class="colbtn" type="button" value="View Site" onclick="window.location.href='http://betsysteinert.webhostingforstudents.com/color_me_crazy/'" /></h2>
+          <img src="images/colormecrazy.PNG" alt="color" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <h2 id="phead2">Ace in the Hole - <input class="acebtn" type="button" value="View Site" onclick="window.location.href='http://betsysteinert.webhostingforstudents.com/ace_hole_multisport_client/site/home.php'" /></h2>
+          <img src="images/ace.PNG" alt="ace" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+
+          <h2 id="phead3">Burrito Masala - <input class="burbtn" type="button" value="View Site" onclick="window.location.href='http://betsysteinert.webhostingforstudents.com/burrito_masala/'" /></h2>
+
+          <img src="images/Capture.PNG" alt="burrito" style="width:100%">
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+
+      <p>
+        Each website I create has been carefully crafted by getting to know my client and their goals for the site. I then integrate what I learned from them with my experience and skillset to build a beautiful website. Please feel free to view the website of each design in order to reveiw the different features of each one.
+      </p>
+
+
+      <p>My skills inlude the following:</p>
+      <ul class="skills">
+        <li>Mobile first design</li>
+        <li>Responsive design</li>
+        <li>UX/UI Design</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>LESS processor</li>
+        <li>PHP inludes/forms</li>
+        <li>JavaScript/jQuery</li>
+        <li>jQuery</li>
+        <li>Social media feeds</li>
+        <li>Weather feeds</li>
+        <li>Wordpress</li>
+      </ul>
+
+
     </section>
 
- 
-    <section id="pricing">
-      <h3>Process</h3>
-      
+
+    <section id="process">
+      <h3 style="text-align: center;">Process</h3>
 
 
-<section class="mbh-interview mbh-notification-box">
-      <h4>Interview Process</h4>
-      <p class="box">I want to get to know you and your business.  The only way I can build an effective website that will reach out to your users is to understand the ins and outs of how your business works.  We together will create a clear direction that will get the building process started.</p>
-      
- 
-</section>
+      <div class="section group">
+        <div class="col span_4_of_12">
+          <section class="mbh-interview mbh-notification-box">
+            <h4>Interview</h4>
+            <p class="box">I want to get to know you and your business! The only way we can build an effective website that will reach out to your desired audinece is for me to understand the how and why of your business. The details can make all the difference in this process, and this is where I can get a better understanding of your passion for the work you do. Then together we will create a clear direction that will allow me to get the building process started.</p>
+          </section>
+        </div>
 
-<section class="mbh-mobile mbh-notification-box">
-      <h4>Mobile First and Responsive Design</h4>
-      <p class="box">I only build sites in Mobile first and responsive design, what this means is that your business information is easily readable and readily accessible across all platforms, the website will adjust according to the screen size. Most importantly on smaller screens suchs as tablets and smartphones.  I will ensure your website delivers an effective, satisfying experience for all users on your site.</p>
-   </section>
-     
-      
-  <section class="mbh-pricing mbh-notification-box">  
-      <h4>Pricing</h4>
-      <p class="box">Every client is different, my prices will be formulated based on the desires and needs of your business.  Whether it is a rebuild or a new design I will build a price plan that is right for your business. Contact me today and we can get started.</p>
-     
-      </section>
-      </section>
+        <div class="col span_4_of_12">
+          <section class="mbh-mobile mbh-notification-box">
+            <h4>Mobile First<br> &amp;<br> Responsive Design</h4>
+            <p class="box">I only build sites in mobile first and responsive design. This means that your business information is easy to read and readily accessible across all platforms, and that the website will adjust according to the screen size. This is especially important on smaller screens such as tablets and smartphones. I will ensure your website delivers an effective, satisfying experience for all users on your site.</p>
+          </section>
+        </div>
 
-   
-   
+        <div class="col span_4_of_12">
+          <section class="mbh-pricing mbh-notification-box">
+            <h4>Pricing</h4>
+            <p class="box">Every client is different, and support of non-profits, charities, and small businesses is a priority of mine. My prices will be individually formulated based on the desires and needs of your business. Whether you just need to retool an existing site or are in need of a brand new design I will build a price plan that is reasonable and fair for your business. Contact me today and we can get started.</p>
+
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section group">
+        <div class="col span_6_of_12">
+          <h2>Betsy Steinert</h2>
+          <img id="me" src="images/577067_3188210984066_1855893948_n.jpg" alt="me">
+        </div>
+
+        <div class="col span_6_of_12">
+
+          <p id="top">
+            As a website designer, I bring passion and creativity to each new project that I take on. I can build a brand new site based on your vision, or reconstruct your old website. I am up to date with current coding standards and have experience in graphic design. My strong feelings for the support of small businesses and non-profits means that I will work to meet your needs and constraints, creating a site that both you and your clientelle will love!
+
+          </p>
+        </div>
+      </div>
+    </section>
+
 
     <section id="contact">
-    <h4>Contact Me Today!</h4>
-<form action="thankyou.php" method="POST">
-	
- Name:
-  <input type="text" name="name" required><br>
- 
-  Email:
-  <input type="email" name="email" required><br>
- 
-Message:<br>
-  <input type="text" name="comment" required><br>
-  <input type="submit" value="Submit"><br>
-</form>
-    
-    
-    
+      <h4>Contact Me Today!</h4>
+      <form action="thankyou.php" method="POST">
+
+        Name:
+        <input type="text" name="name" required><br> Email:
+        <input type="email" name="email" required><br> Message:
+
+        <br>
+        <input type="text" name="comment" class="textbox" required><br>
+        <input type="submit" value="Submit"><br>
+      </form>
+
+
+
     </section>
   </main>
   <script type="text/javascript" src="hamburger.js"></script>
   <script type="text/javascript" src="slide.js"></script>
- 
+
   <footer>
     <?php include ('footer.php');?>
   </footer>

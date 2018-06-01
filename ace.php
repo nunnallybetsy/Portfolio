@@ -27,30 +27,28 @@
   <main>
    <img src="images/ace.PNG">
     
-    <div class="section group">
-			<div class="col span_6_of_12">
-				<section id="features"><!--In this section you can change the meat options in the list, h3 or image  -->
-					<h3>Features</h3>
-                  <ul>
-                    <li>Some feature</li>
-                    <li>Some feature</li>
-                    <li>Some feature</li>
-                    <li>Some feature</li>
-                    <li>Some feature</li>
-                    <li>Some feature</li>
+  
                   
-                  </ul>
-				</section><!-- end of meat section -->
-			</div>
-			<div class="col span_6_of_12"><!--This allows the three options to be grouped into 3 columns that span across when in tablet or desktop mode, this is the 2nd column   -->
-				<section id="specs"><!--In this section you can change the veggie options in the list, h3 or image  -->
-					<h3>Specs</h3>
-                    <p>Every client is different, my prices will be formulated based on the desires and needs of your business.  Whether it is a rebuild or a new design I will build a price plan that is right for your business. Contact me today and we can get started.</p>
-                  
-				</section><!-- end of veggie section -->
-			</div>
+      <section class="mbh-features mbh-notification-box">
+                
+    
+      	<h3>Features</h3>
+         <p class="box">Every client is different, my prices will be formulated based on the desires and needs of your business.  Whether it is a rebuild or a new design I will build a price plan that is right for your business. Contact me today and we can get started.</p>
+                            
 
-    </div>
+   </section>
+     
+      
+  <section class="mbh-pricing mbh-notification-box">  
+      <h4>Specs</h4>
+      <p class="box">Every client is different, my prices will be formulated based on the desires and needs of your business.  Whether it is a rebuild or a new design I will build a price plan that is right for your business. Contact me today and we can get started.</p>
+     
+      </section>
+				
+				<!-- end of meat section -->
+			
+
+
 
 
     
