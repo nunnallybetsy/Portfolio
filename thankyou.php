@@ -1,4 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
+  <title>Betsy Steinert Designs</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway%7CUbuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/helper.css" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <header class="main-header">
+    <h1><img id="logo" src="images/simplelogo.png" alt="logo"></h1>
+    <?php include ('header.php');?>
+  </header>
+
+
+  <main>
+    
 
 <?php
  
@@ -67,10 +96,23 @@ $mail->Body .= 'Message:' . $_POST['comment'] . '<br>';
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    echo "<h2>Thank you for your message. I will get back to you as soon as I can!</h2>";
+    echo "<h2>Thank you for your message. I take all inquiries seriously and will get back to you as soon as I possibly can. I look forward to working with you in the future!</h2>";
 }
 
 
+?>
+    
+    <p class="return">Please click here to return to the main page.<a href="http://betsysteinert.webhostingforstudents.com/bsdesigns/test/home.php"><br>Main Page</a></p>
+      </main>
+  <script type="text/javascript" src="hamburger.js"></script>
+  <script type="text/javascript" src="slide.js"></script>
 
+  <footer>
+    <?php include ('footer.php');?>
+  </footer>
+
+</body>
+
+</html>
 
 
