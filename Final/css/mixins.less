@@ -1,0 +1,101 @@
+// out: null
+
+.expand() {
+  transform: scale(1.1);
+  display: inline-block;
+}
+
+.transparent() {
+  opacity: 0.5;
+}
+
+.textstyle() {
+  font-style: bold;
+  
+  
+}
+
+.textstyle2() {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.textstyle3() {
+  text-transform: uppercase;
+}
+
+.h2() {
+
+  padding: 30px 0 10px 20px;
+  font: 1.3em 'Ubuntu', sans-serif;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+
+.h3() {
+
+  padding: 30px 0 10px 20px;
+  font-size: 1.7em;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+  font-weight: bold;
+  
+
+}
+
+.img() {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.p() {
+  padding: .5em 2em 1em 2em;
+  line-height: 1.5em;
+}
+
+.liststyle() {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.em() {
+  font-weight: bold;
+}
+
+.topright() {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    
+}
+
+.footer() {
+	
+	clear: both;
+	position: relative;
+	height: 10em;
+	color: @color2;
+	text-align: center;
+	font-size: 1em;
+	background-color: @color3;	
+}
+
+.socialicon() {
+	.fa {
+		padding: 0.2em 0em 0.2em 0em;
+		font-size: 2em;
+		width: 2em;
+		text-align: center;
+		text-decoration: none;
+		color: @color2;
+		.fa:hover {
+			opacity: 0.7;
+		}
+	}
+}
